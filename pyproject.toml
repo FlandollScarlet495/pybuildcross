@@ -3,15 +3,15 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pybuildcross"
-version = "1.0.0a1"
+name = "pybuildcross-aoi"
+version = "0.0.1a2"
 description = "Cross-compile Python and HTML scripts into standalone executables using a lightweight Go backend."
 readme = "README.md"
 authors = [
     { name = "Kirishima Aoi" }
 ]
 license = { file = "LICENSE" }
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",

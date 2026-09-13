@@ -6,13 +6,19 @@
 
 ## 📦 特徴
 
-* ⚡ **簡単な API**: Python から `build()` 関数を呼ぶだけでクロスコンパイルが可能
+* ⚡ **簡単な API**: Python から `pbc()` 関数を呼ぶだけでクロスコンパイルが可能
 * 🌍 **マルチプラットフォーム対応**: Windows (x86/x64/ARM64)、macOS (x64/ARM64)、Linux (x86/x64/ARM) へのビルドに対応
 * 🐍 **Python / HTML 両対応**: Python の標準環境・埋め込み実行モードに加え、HTML 形式のスタンドアロン起動にも対応
 
 ---
 
 ## 🔧 使い方
+
+```python
+from pybuildcross import pybuildcross as pbc
+
+...
+```
 
 ### 基本的なビルド方法
 
@@ -34,7 +40,7 @@ pbc("index.html", target="linux/amd64")
 
 ## 🛠️ オプション指定
 
-`pybuildcross()` 関数には以下のパラメータを指定できます：
+`pbc()` 関数には以下のパラメータを指定できます：
 
 * `input_file`: 対象ファイル（`.py` または `.html`）
 * `target`: ターゲットプラットフォーム (`win-amd64`, `mac-arm64`, `linux/amd64` など)

@@ -95,7 +95,7 @@ def pybuildcross(input_file, target=None, python_mode="system", output=None):
         raise ValueError(f"サポートされていないアーキテクチャです: {arch_part}")
 
     # ビルダールートバイナリのパス
-    base_dir = os.path.dirname(os.abspath(__file__))
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     builder_path = os.path.join(base_dir, "python_builder", os_dir, builder_exe_name)
     if not os.path.exists(builder_path):
         raise FileNotFoundError(
